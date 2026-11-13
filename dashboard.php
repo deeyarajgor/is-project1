@@ -7,5 +7,5 @@ if (!isset($_SESSION['user_id'])) { header('Location: login.php'); exit; }
 <body><div class="card">
 <h2>Welcome, <?php echo htmlspecialchars($_SESSION['full_name']); ?>!</h2>
 <p>You are logged in as <b><?php echo htmlspecialchars($_SESSION['username']); ?></b>.</p>
-<p><a href="logout.php">Log out</a></p>
+<p><a href="feedback.php">Give feedback</a> | <a href="logout.php">Log out</a></p>
 </div></body></html>
